@@ -7,6 +7,9 @@
   },
   "scripts": {
     "start": "npm run start:host & npm run start:remote",
+    "build": "npm run build:host & npm run build:remote",
+    "build:host": "cd ./host-app && npm run build",
+    "build:remote": "cd ./remote-app && npm run build",
     "start:host": "cd ./host-app && npm start",
     "start:remote": "cd ./remote-app && npm start",
     "start:all": "yarn workspaces run start",
